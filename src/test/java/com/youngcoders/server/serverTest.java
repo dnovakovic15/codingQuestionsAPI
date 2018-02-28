@@ -1,11 +1,12 @@
 package com.youngcoders.server;
 
-
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+//
+//import com.youngcoders.Application;
+//import org.junit.jupiter.api.Test;
+//import static org.junit.jupiter.api.Assertions.*;
 
 public class serverTest {
-    Application tester = new Application();
+//    Application tester = new Application();
 
 //    @Test
 //    public void testServer(){
