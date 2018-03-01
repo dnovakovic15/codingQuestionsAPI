@@ -2,6 +2,7 @@ package com.youngcoders.server;
 
 import com.youngcoders.model.QuestionDaos;
 import com.youngcoders.model.Question;
+import com.youngcoders.model.QuestionModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -26,7 +27,7 @@ public class QuestionsController {
     @RequestMapping("/get-by-email")
     @ResponseBody
     public String getAll() {
-        List<Question> questions;
+        List<QuestionModel> questions;
 
         try {
             questions = questionDaos.findAll();
@@ -35,6 +36,6 @@ public class QuestionsController {
             System.out.println(ex);
             return "Question not found";
         }
-        return "The question is: " + questions.get(0).getQuestion();
+        return "The question is: " + questions.get(0).getEverything();
     }
 }

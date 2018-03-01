@@ -16,8 +16,8 @@ import java.util.List;
  * @author netgloo
  */
 @Transactional
-public interface QuestionDaos extends  JpaRepository<Question, Long>{
+public interface QuestionDaos extends  JpaRepository<QuestionModel, Long>{
 
-    public List<Question> findAll();
+    public List<QuestionModel> findAll();
 }
 

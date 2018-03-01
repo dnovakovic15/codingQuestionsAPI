@@ -1,4 +1,4 @@
-package com.youngcoders.server;
+package com.youngcoders.model;
 
 import java.util.ArrayList;
 
